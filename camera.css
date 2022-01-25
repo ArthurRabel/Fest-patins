@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;600&family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #111111;
+}
+p{
+    font-family: "Poppins";
+    color: white;
+    font-size: calc(1vw + 13px);
+}
+h1{
+    font-family: "Poppins";
+    color: white;
+    font-size: calc(1vw + 13px);
+    font-weight: 300;
+}
+.header{
+    background-color: #171717;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header div{
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Logo img{
+    width: 185px;
+}
+.headerNav ul{
+    display: flex;
+    list-style-type: none;
+}
+.headerNav a{
+    font-family: 'Chakra Petch';
+    color: white;
+    text-decoration: none;
+    font-size: calc(1vw + 13px);
+}
+.MsgError{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+.divMsgError{
+    width: 90%;
+    max-width: 1200px;
+    height: 90%;
+    max-height: 800px;
+    border: 4px #171717 solid;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.divMsgError svg{
+    width: calc(5vw + 50px);
+    height: calc(5vw + 50px);
+}
+.footer{
+    width: 100%;
+    background-color: #A23EB8;
+    position: absolute;
+    bottom: 0;
+}
+.footer div{
+    margin: auto;
+    padding: 15px 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width:480px) {
+    p{font-size: calc(0.7vw + 10px);}
+}
+@media (min-width:801px) {
+    p{font-size: calc(0.7vw + 12px);}
+}
+@media (min-width:1025px) {
+    p{font-size: calc(0.7vw + 9px);}
+    .Logo img{
+        width: 255px;
+    }
+}
+@media (min-width:1281px) {
+    p{font-size: calc(0.7vw + 5px);}
+    .headerNav a{
+        font-size: calc(0.7vw + 12px);
+    }
+}

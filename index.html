@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Fest Patins</title>
@@ -29,8 +30,8 @@
             <nav id="menuOptionMobile" class="menuOptionMobile">
                 <svg id="fecharMenu" class="fecharMenu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" width="48px" height="48px"><g id="surface3184823"><path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 9.414062 6.585938 L 6.585938 9.414062 L 21.171875 24 L 6.585938 38.585938 L 9.414062 41.414062 L 24 26.828125 L 38.585938 41.414062 L 41.414062 38.585938 L 26.828125 24 L 41.414062 9.414062 L 38.585938 6.585938 L 24 21.171875 Z M 9.414062 6.585938 "/></g></svg>
                 <ul>
-                    <li><a href="#sectionSentenceBottom">Informações</a></li>
-                    <li><a href="#Map">Mapa</a></li>
+                    <li><a onclick="fecharMenu()" href="#sectionSentenceBottom">Informações</a></li>
+                    <li><a onclick="fecharMenu()" href="#Map">Mapa</a></li>
                 </ul>
                 <div class="socialNetworksMobile">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px"><path fill="#212121" fill-rule="evenodd" d="M10.904,6h26.191C39.804,6,42,8.196,42,10.904v26.191 C42,39.804,39.804,42,37.096,42H10.904C8.196,42,6,39.804,6,37.096V10.904C6,8.196,8.196,6,10.904,6z" clip-rule="evenodd"/><path fill="#ec407a" fill-rule="evenodd" d="M29.208,20.607c1.576,1.126,3.507,1.788,5.592,1.788v-4.011 c-0.395,0-0.788-0.041-1.174-0.123v3.157c-2.085,0-4.015-0.663-5.592-1.788v8.184c0,4.094-3.321,7.413-7.417,7.413 c-1.528,0-2.949-0.462-4.129-1.254c1.347,1.376,3.225,2.23,5.303,2.23c4.096,0,7.417-3.319,7.417-7.413L29.208,20.607L29.208,20.607 z M30.657,16.561c-0.805-0.879-1.334-2.016-1.449-3.273v-0.516h-1.113C28.375,14.369,29.331,15.734,30.657,16.561L30.657,16.561z M19.079,30.832c-0.45-0.59-0.693-1.311-0.692-2.053c0-1.873,1.519-3.391,3.393-3.391c0.349,0,0.696,0.053,1.029,0.159v-4.1 c-0.389-0.053-0.781-0.076-1.174-0.068v3.191c-0.333-0.106-0.68-0.159-1.03-0.159c-1.874,0-3.393,1.518-3.393,3.391 C17.213,29.127,17.972,30.274,19.079,30.832z" clip-rule="evenodd"/><path fill="#fff" fill-rule="evenodd" d="M28.034,19.63c1.576,1.126,3.507,1.788,5.592,1.788v-3.157 c-1.164-0.248-2.194-0.856-2.969-1.701c-1.326-0.827-2.281-2.191-2.561-3.788h-2.923v16.018c-0.007,1.867-1.523,3.379-3.393,3.379 c-1.102,0-2.081-0.525-2.701-1.338c-1.107-0.558-1.866-1.705-1.866-3.029c0-1.873,1.519-3.391,3.393-3.391 c0.359,0,0.705,0.056,1.03,0.159V21.38c-4.024,0.083-7.26,3.369-7.26,7.411c0,2.018,0.806,3.847,2.114,5.183 c1.18,0.792,2.601,1.254,4.129,1.254c4.096,0,7.417-3.319,7.417-7.413L28.034,19.63L28.034,19.63z" clip-rule="evenodd"/><path fill="#81d4fa" fill-rule="evenodd" d="M33.626,18.262v-0.854c-1.05,0.002-2.078-0.292-2.969-0.848 C31.445,17.423,32.483,18.018,33.626,18.262z M28.095,12.772c-0.027-0.153-0.047-0.306-0.061-0.461v-0.516h-4.036v16.019 c-0.006,1.867-1.523,3.379-3.393,3.379c-0.549,0-1.067-0.13-1.526-0.362c0.62,0.813,1.599,1.338,2.701,1.338 c1.87,0,3.386-1.512,3.393-3.379V12.772H28.095z M21.635,21.38v-0.909c-0.337-0.046-0.677-0.069-1.018-0.069 c-4.097,0-7.417,3.319-7.417,7.413c0,2.567,1.305,4.829,3.288,6.159c-1.308-1.336-2.114-3.165-2.114-5.183 C14.374,24.749,17.611,21.463,21.635,21.38z" clip-rule="evenodd"/></svg>
@@ -50,19 +51,22 @@
     <section id="Competition" class="Competition">
         <div>
             <h1>Competição 1</h1>
-            <p>Pista completa, faixa etária acima de 16 anos</p>
-            <input type="button" id="Mapa1" class="MapaButao" value="Mapa">
+            <p>Pista completa, faixa etária +16 anos</p>
+            <a href="#Map"><input type="button" id="Mapa1" class="MapaButao" value="Mapa"></a>
         </div>
         <div>
             <h1>Competição 2</h1>
-            <p>Pista menor, faixa etária de 12 a 15</p>
-            <input type="button" id="Mapa2" class="MapaButao" value="Mapa">
+            <p>Pista menor, faixa etária de 12 a 15 anos</p>
+            <a href="#Map"><input type="button" id="Mapa2" class="MapaButao" value="Mapa"></a>
         </div>
         <div>
             <h1>Competição 3</h1>
-            <p>Pista pequena, faixa etária de 8 a 12 anos,</p>
-            <input type="button" id="Mapa3"  class="MapaButao" value="Mapa">
+            <p>Pista pequena, faixa etária de 8 a 12 anos</p>
+            <a href="#Map"><input type="button" id="Mapa3"  class="MapaButao" value="Mapa"></a>
         </div>
+    </section>
+        <section class="alert">
+        <p>Equipamentos de segurança são obrigatório.</p>
     </section>
     <section id="Map" class="Map">
         <div>
@@ -85,10 +89,14 @@
                 <p class="Endereço">St. Tradicional Q 58A Igrejinha - Igreja de São Sebastião - Planaltina, Brasília - DF, 73330-152</p>
                 <a href="https://www.google.com/maps/@-15.6233934,-47.6622011,19z"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40" width="40px" height="40px"><g id="surface650036"><path style=" stroke:none;fill-rule:nonzero;fill:rgb(9.019608%,9.019608%,9.019608%);fill-opacity:1;" d="M 3.5 38.5 C 2.964844 38.5 2.464844 38.292969 2.085938 37.914062 C 1.707031 37.539062 1.5 37.035156 1.5 36.5 C 1.5 35.96875 1.707031 35.464844 2.085938 35.085938 L 20.316406 17.703125 L 22.300781 19.691406 L 4.902344 37.921875 C 4.535156 38.292969 4.03125 38.5 3.5 38.5 Z M 3.5 38.5 "/><path style=" stroke:none;fill-rule:nonzero;fill:rgb(63.529414%,24.313726%,72.156864%);fill-opacity:1;" d="M 20.308594 18.40625 L 21.601562 19.699219 L 4.558594 37.5625 C 4.277344 37.84375 3.898438 38 3.5 38 C 3.097656 38 2.722656 37.84375 2.4375 37.5625 C 1.855469 36.976562 1.855469 36.027344 2.421875 35.457031 L 20.308594 18.40625 M 20.328125 17.007812 L 1.730469 34.734375 C 0.757812 35.710938 0.757812 37.292969 1.730469 38.269531 C 2.21875 38.757812 2.859375 39 3.5 39 C 4.140625 39 4.777344 38.757812 5.265625 38.269531 L 23 19.683594 Z M 20.328125 17.007812 "/><path style=" stroke:none;fill-rule:nonzero;fill:rgb(13.333334%,13.333334%,13.333334%);fill-opacity:1;" d="M 26 26.5 C 19.105469 26.5 13.5 20.894531 13.5 14 C 13.5 7.105469 19.105469 1.5 26 1.5 C 32.894531 1.5 38.5 7.105469 38.5 14 C 38.5 20.894531 32.894531 26.5 26 26.5 Z M 26 26.5 "/><path style=" stroke:none;fill-rule:nonzero;fill:rgb(63.529414%,24.313726%,72.156864%);fill-opacity:1;" d="M 26 2 C 32.617188 2 38 7.382812 38 14 C 38 20.617188 32.617188 26 26 26 C 19.382812 26 14 20.617188 14 14 C 14 7.382812 19.382812 2 26 2 M 26 1 C 18.820312 1 13 6.820312 13 14 C 13 21.179688 18.820312 27 26 27 C 33.179688 27 39 21.179688 39 14 C 39 6.820312 33.179688 1 26 1 Z M 26 1 "/></g></svg></a>
             </div>
+            <div></div>
         </div>
     </section>
-    <section class="alert">
-        <p>Equipamentos de segurança são obrigatório.</p>
+    <section class="cam">
+        <div class="camDiv">
+            <div class="camDiv1"><a href="Camera.html"><input class="camInput" type="button" value="Camera 1"></a><a href="Camera.html"><input class="camInput" type="button" value="Camera 2"></a></div>
+            <div class="camDiv2"><a href="Camera.html"><input class="camInput" type="button" value="Camera 3"></a><a href="Camera.html"><input class="camInput" type="button" value="Camera 4"></a></div>
+        </div>
     </section>
     <footer class="footer">
         <div>

@@ -17,7 +17,7 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #111111;
-    height: 600px;
+    height: 700px;
 }
 .header{
     margin: 10px auto;
@@ -112,7 +112,7 @@ p{
     flex-direction: column;
     align-items: center;
 }
-.Competition>div>h1, .Competition>div>p, .Competition>div>input{
+.Competition>div>h1, .Competition>div>p, .Competition>div input{
     color: white;
     text-align: center;
 }
@@ -122,13 +122,16 @@ p{
     font-weight: 500;
     margin-bottom: 7px;
 }
-.Competition>div>input{
+.Competition>div a{
+    width: 50%;
+}
+.Competition>div input{
     background-color: #A23EB8;
     border: none;
     border-radius: 5px;
     padding: 7px;
     margin-top: 20px;
-    width: 50%;
+    width: 100%;
 }
 .Map>div{
     margin: 0 auto 20px;
@@ -188,6 +191,40 @@ p{
 .alert p{
     text-align: center;
 }
+.cam{
+    margin: 0 auto 20px;
+    padding: 20px;
+    width: 80%;
+    min-width: 210px;
+    max-width: 1020px;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.camDiv{
+    width: 100%;
+}
+.camDiv1{
+    margin-bottom: 10px;
+}
+.camDiv1, .camDiv2{
+    display: flex;
+    justify-content: space-between;
+}
+.camDiv1 a, .camDiv2 a{
+    width: 45%;
+}
+.camInput{
+    width: 100%;
+    background-color: #A23EB8;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-family: "Poppins";
+}
 .footer{
     width: 100%;
     background-color: #A23EB8;
@@ -204,7 +241,7 @@ p{
 }
 @media (min-width:600px) {
     .sectionHome{
-        height: 70vh;
+        height: 90vh;
     }
     .header{
         width: 95%;
@@ -239,6 +276,16 @@ p{
     }
     .divCoresCorrida{
         width: 30%;
+    }
+    .camDiv{
+        display: flex;
+        justify-content: space-between;
+    }
+    .camDiv1{
+        margin: 0;
+    }
+    .camDiv1, .camDiv2{
+        width: 48%;
     }
 }
 @media (min-width:801px) {
