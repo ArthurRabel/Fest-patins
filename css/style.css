@@ -11,7 +11,7 @@ p{
     color: white;
 }
 .sectionHome{
-    background-image: url("guriaCorrendo.png");
+    background-image: url("../image/guriaCorrendo.png");
     background-position-x: center;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -132,6 +132,7 @@ p{
     padding: 7px;
     margin-top: 20px;
     width: 100%;
+    cursor: pointer;
 }
 .Map>div{
     margin: 0 auto 20px;
@@ -217,6 +218,7 @@ p{
     width: 45%;
 }
 .camInput{
+    cursor: pointer;
     width: 100%;
     background-color: #A23EB8;
     border: none;

@@ -3,15 +3,18 @@
     margin: 0;
     padding: 0;
 }
+html, body{
+    min-height:100%;
+}
 body{
     background-color: #111111;
 }
 p{
     font-family: "Poppins";
     color: white;
-    font-size: calc(1vw + 13px);
+    font-size: calc(0.7vw + 10px);
 }
-h1{
+h1, h2{
     font-family: "Poppins";
     color: white;
     font-size: calc(1vw + 13px);
@@ -26,45 +29,23 @@ h1{
     justify-content: center;
 }
 .header div{
-    margin: 10px auto;
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.Logo img{
+.header__Logo{
     width: 185px;
 }
-.headerNav ul{
+.header__ul{
     display: flex;
     list-style-type: none;
 }
-.headerNav a{
+.header__a{
     font-family: 'Chakra Petch';
     color: white;
     text-decoration: none;
     font-size: calc(1vw + 13px);
-}
-.MsgError{
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-}
-.divMsgError{
-    width: 90%;
-    max-width: 1200px;
-    height: 90%;
-    max-height: 800px;
-    border: 4px #171717 solid;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.divMsgError svg{
-    width: calc(5vw + 50px);
-    height: calc(5vw + 50px);
 }
 .footer{
     width: 100%;
@@ -72,7 +53,7 @@ h1{
     position: absolute;
     bottom: 0;
 }
-.footer div{
+.footer__div{
     margin: auto;
     padding: 15px 0;
     width: 90%;
@@ -80,20 +61,20 @@ h1{
     justify-content: space-between;
 }
 @media (min-width:480px) {
-    p{font-size: calc(0.7vw + 10px);}
+    
 }
 @media (min-width:801px) {
     p{font-size: calc(0.7vw + 12px);}
 }
 @media (min-width:1025px) {
     p{font-size: calc(0.7vw + 9px);}
-    .Logo img{
+    .header__Logo{
         width: 255px;
     }
 }
 @media (min-width:1281px) {
     p{font-size: calc(0.7vw + 5px);}
-    .headerNav a{
+    .header__a{
         font-size: calc(0.7vw + 12px);
     }
 }
